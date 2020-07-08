@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>You've hit a paywall</title>
+
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+    <script src="./index.js"></script>
+  </head>
+
+  <body onload="start()" class="container">
+
+    <h1 class="page-header">You have hit a paywall</h1>
+
+    <div class="row">
+      <div>
+        <h3 class="sub-header">Subscribe if you dont have a token(requires Metamask)</h3>
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <table>
+              <tr>
+                <td><label for="tokenno">Enter a tokenID:</label> </td>
+                <td>
+                  <input class="form-control" id="tokenno">
+                </td>
+              </tr>
+            </table>
+          </div>
+          <a href="#" onclick="mintfunction()" class="btn btn-primary">Subscribe</a>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div>
+        <h3 class="sub-header">Already have token?</h3>
+        <form class="form-inline" role="form">
+          <a href="#" onclick="balanceofaccount()" class="btn btn-primary">Access</a>
+          <div class="form-group">
+
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="myDIV">
+      If this technology is so complex, why call it “blockchain?” At its most basic level, blockchain is literally just a chain of blocks, but not in the traditional sense of those words. When we say the words “block” and “chain” in this context, we are actually talking about digital information (the “block”) stored in a public database (the “chain”).
+
+  “Blocks” on the blockchain are made up of digital pieces of information. Specifically, they have three parts:
+
+  Blocks store information about transactions like the date, time, and dollar amount of your most recent purchase from Amazon. (NOTE: This Amazon example is for illustrative purchases; Amazon retail does not work on a blockchain principle as of this writing)
+  Blocks store information about who is participating in transactions. A block for your splurge purchase from Amazon would record your name along with Amazon.com, Inc. (AMZN). Instead of using your actual name, your purchase is recorded without any identifying information using a unique “digital signature,” sort of like a username.
+  Blocks store information that distinguishes them from other blocks. Much like you and I have names to distinguish us from one another, each block stores a unique code called a “hash” that allows us to tell it apart from every other block. Hashes are cryptographic codes created by special algorithms. Let’s say you made your splurge purchase on Amazon, but while it’s in transit, you decide you just can’t resist and need a second one. Even though the details of your new transaction would look nearly identical to your earlier purchase, we can still tell the blocks apart because of their unique codes.
+    </div>
+
+  </body>
+</html>
