@@ -1,6 +1,6 @@
 # PayableWallet
 
-This is an implimentation of a paywall using Metamask. On subsribing to the website, you will get a "SUB" non fungible token. This token is coded in the standard ERC 721 standard and is therefore non refundable. 
+This is an implimentation of a paywall using Metamask. On subsribing to the website, you will get a "SUB" non fungible token for 0.0001 Ether. This token is coded in the standard ERC 721 standard and is therefore non transferable. 
 
 ## Instructions
 
@@ -37,6 +37,10 @@ Connects to your account
 ![3](https://user-images.githubusercontent.com/51082769/86911981-d0e22680-c139-11ea-9ea8-bd28aed0a35f.PNG)
 
 Approving a transaction to the mint function to give the msg.sender a SUB token, with which he can "access" the content on the website at any later time
+
+## The road ahead
+
+Contains two smart contracts. One is to integrate DAI stablecoin into the system and use it as an ERC 20 token for payments, instead of an exceptionally volatile currency like ether. Further the second smart contract leverages all the DAI stored and gives it to the compound protocol, where one can invest DAI.
 
 
 
