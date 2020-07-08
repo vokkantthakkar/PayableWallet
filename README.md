@@ -7,16 +7,21 @@ This is an implimentation of a paywall using Metamask. On subsribing to the webs
 Clone the repository.
 Ensure you have node and npm installed.
 Install the [Metamask Chrome Extension](https://metamask.io/).
-Install web3 using the command: 
+Install web3 using the command:
+
 `npm install web3 --save`
+
 Install Express to run the server:
+
 `npm install express --save`
 
 Finally, use this command to start on localhost:3300:
+
 `node server.js`
 
 The smart contract is deployed using Remix IDE on the Goerli Test Network. If you are deploying your own contract instance change the following parameters in the index.js file:
 `var contractAddress = '0x2f9B0A57C01fb9bd3CF29D4D0e16F5f71aCEDb18'; //Enter your deployed contract address here` 
+
 `var abi = [...] //Enter your abi here`
 
 ## Screenshots
